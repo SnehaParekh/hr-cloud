@@ -1,0 +1,240 @@
+/*
+  ========================================
+ Employee Card Block
+  ========================================
+*/
+.card-block {
+  padding: 20px;
+  text-align: left;
+}
+
+/*
+  ========================================
+ Employee Card
+  ========================================
+*/
+
+.emp-container {
+  color: #fff;
+  margin-top: 115px;
+}
+
+.card {
+  display: inline-block;
+  position: relative; 
+  margin: 0 20px 20px;
+  box-shadow: 3px 3px 12px 3px rgba(0, 0, 0, 0.26);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  overflow: hidden;
+}
+
+.card-img-top {
+  height: 100%;
+  width: 100%;
+  width:183px;
+  //background-position: 
+}
+
+
+.card-text-box { 
+   position: absolute; 
+   bottom: 0;
+   width: 100%; 
+   padding-bottom: 0;
+   background-color: #192038;  
+   max-height: 72px;
+   transition: max-height 200ms ease;
+}
+
+.emp-name {
+  font-size: 0.875em;
+  padding: 15px 20px;
+  padding-bottom: 10px;
+}
+
+.emp-designation {
+  font-family: montserrat;
+  font-size: 0.813em;
+  color: #575c72;
+  padding: 0 20px;
+  padding-bottom: 20px;
+}
+
+.edit {
+  float: right;
+  margin-top: 15px;
+  margin-right: 20px;
+  display: none;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover .card-text-box {
+  max-height:200px;
+  background-image: linear-gradient(to left, #fc855f, #fa629c);
+}
+
+.card:hover .emp-designation {
+  color: #fff;
+}
+
+.card:hover .edit {
+  display: block;
+}
+
+/*
+  ========================================
+ Employee Card - OVERLAY
+  ========================================
+*/
+
+.emp-income {
+  font-size: 0.750em;
+  text-transform: uppercase;
+  background-color: rgba(255,206,204, 0.25);
+}
+.emp-taxable-income, .emp-tax-payable-income {
+  display: inline-block;
+  width: 50%;
+  padding: 10px 0;
+  text-align: center;
+}
+.emp-taxable-income {
+  float: left;  
+  border-right: 0.1px solid #ffcecc;
+}
+
+.emp-tax-payable-income {
+  float: right;
+}
+
+.emp-income h5:first-child {
+  margin-bottom: 5px;
+}
+
+.emp-income h5:nth-child(2) {
+  font-size: 0.688em;
+}
+
+
+/*
+  ========================================
+ Search Block
+  ========================================
+*/
+
+.search-block {
+    margin:45px 40px;
+    margin-bottom: 25px;
+}
+
+.search-block .dropdown {
+    float:left;
+}
+
+.search-block .search-bar,
+.search-block .add-emp-btn {
+    float:right;
+}
+
+.search-block .dropdown #down-arrow {
+    float: right;
+    color:#404a72;
+    font-size: 1.2em;
+    transform: scaleY(-1);
+    font-weight: 900;
+}
+
+.dropbtn {
+    text-align: left;
+    background-color: #192038;
+    color: white;
+    padding: 16px;
+    font-size: 0.875em;
+    border: none;
+    cursor: pointer;
+    font-family: montserrat;
+    border-radius: 4px;
+    width:150px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: 0.875em;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #192038;
+}
+
+.search-block .add-emp-btn {
+    text-align: center;
+    margin-left: 50px;
+}
+
+.search-block .search-bar {
+  display: inline-block;
+  line-height: 50px;
+  position: relative;
+}
+
+.search-bar .search-icon {
+  cursor: pointer;
+  margin-left: 20px;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  margin-left: 10px;
+}
+
+.search-block input {
+  outline: none;
+  border:none;
+  background-image:none;
+  background-color:transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.search-bar .search-field {
+  border-bottom: 3px solid transparent;
+  padding: 5px;
+  width: 150px;
+  color: #fff;
+  font-size: 1em;
+  font-family: montserrat;
+  padding-right: 30px;
+}
+
+.search-field:focus {
+  border-bottom: 3px solid #8899ff;
+}

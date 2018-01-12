@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HR Cloud - emp</title>
+    <link rel="stylesheet" href="assets/stylesheets/reset.css">
+    <link rel="stylesheet" href="assets/stylesheets/index.css">
+    <link rel="stylesheet" href="assets/stylesheets/employee.css">
+    <link rel="stylesheet" href="assets/stylesheets/add-emp.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar clearfix">
+            <div class="navbar-left">
+                <a href="#" class="menu"><img src="assets/images/header/menu.png" alt="menu" /></a>
+                <a href="index.html" id="logo">Hr Cloud</a>
+            </div>
+            <div class="navbar-right">
+                <ul class="user-menu">
+                    <li class="user-profile">
+                        <a href="#"><img src="assets/images/header/user.png" alt="current user" /></a>
+                    </li>
+                    <li class="user-notification">
+                        <a href="#"><img src="assets/images/header/notification.png" alt="Notification" /></a>
+                    </li>
+                    <li class="user-messages">
+                        <a href="#"><img src="assets/images/header/message.png" alt="Messages" /></a>
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="emp-container">
+        <div class="search-block clearfix">
+            <div class="dropdown">
+                <button class="dropbtn clearfix">All Teams <span id="down-arrow">^</span></button>
+                <div class="dropdown-content">
+                    <a href="#">UI Designer</a>
+                    <a href="#">UI Developer</a>
+                    <a href="#">Product Manager</a>
+                    <a href="#">Software Developer</a>
+                </div>
+            </div>
+
+            <a href="#" class="add-emp-btn" onclick="toggleNav()">Add Employee</a>
+            <div class="search-bar">
+                <span class="search-icon"><img src="assets/images/search.png" /></span>
+                <input type="text" class="search-field" />
+            </div>
+        </div>
+
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()"><img src="assets/images/close.png" /></a>
+
+            <form class="add-employee-form">
+                <div class="title">Full Name</div>
+                <input type="text" name="fullname" class="input-box">
+
+                <div class="title">Email ID</div>
+                <input type="text" name="emailid" class="input-box">
+
+                <div class="title">Gross Salary</div>
+                <input type="text" name="grosss-salary" class="input-box">
+
+                <div class="title">Investment</div>
+                <input type="text" name="investment" class="input-box">
+
+                <div class="title">Taxable Income</div>
+                <input type="text" name="taxable-income" class="input-box">
+
+                <div class="title">Tax Payable</div>
+                <input type="text" name="tax-payable" class="input-box">
+
+                <br>
+                <input type="submit" name="submit" class="form-submit-btn add-emp-btn">
+            </form>
+
+        </div>
+
+
+
+            <div class="card">
+                <img class="card-img-top" src="assets/images/emp/emp-6.png" alt="Rose Wardon" />
+                <div class="card-text-box">
+                    <div class="top-text">
+                        <a class="edit" href="#"><img src="assets/images/edit.png" /></a>
+                        <h4 class="emp-name">Rose Wardon</h4>
+                        <h5 class="emp-designation">Product Manager</h5>
+                    </div>
+
+
+                    <div class="emp-income clearfix">
+                        <div class="emp-taxable-income">
+                            <h5>7,50,000</h5>
+                            <h5>Taxable Income</h5>
+                        </div>
+                        <div class="emp-tax-payable-income">
+                            <h5>1,50,000</h5>
+                            <h5>Tax Payable</h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!--
+            
+            --><div class="card">
+                <img class="card-img-top" src="assets/images/emp/emp-2.png" alt="Rose Wardon" />
+                <div class="card-text-box">
+                    <a class="edit" href="#"><img src="assets/images/edit.png" /></a>
+                    <h4 class="emp-name">Rose Wardon</h4>
+                    <h5 class="emp-designation">Product Manager</h5>
+
+
+                    <div class="emp-income clearfix">
+                        <div class="emp-taxable-income">
+                            <h5>7,50,000</h5>
+                            <h5>Taxable Income</h5>
+                        </div>
+                        <div class="emp-tax-payable-income">
+                            <h5>1,50,000</h5>
+                            <h5>Tax Payable</h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!--
+            
+            --><div class="card">
+                <img class="card-img-top" src="assets/images/emp/emp-3.png" alt="Rose Wardon" />
+                <div class="card-text-box">
+                    <a class="edit" href="#"><img src="assets/images/edit.png" /></a>
+                    <h4 class="emp-name">Rose Wardon</h4>
+                    <h5 class="emp-designation">Product Manager</h5>
+
+
+                    <div class="emp-income clearfix">
+                        <div class="emp-taxable-income">
+                            <h5>7,50,000</h5>
+                            <h5>Taxable Income</h5>
+                        </div>
+                        <div class="emp-tax-payable-income">
+                            <h5>1,50,000</h5>
+                            <h5>Tax Payable</h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!--
+
+            --><div class="card">
+                <img class="card-img-top" src="assets/images/emp/emp-4.png" alt="Rose Wardon" />
+                <div class="card-text-box">
+                    <a class="edit" href="#"><img src="assets/images/edit.png" /></a>
+                    <h4 class="emp-name">Rose Wardon</h4>
+                    <h5 class="emp-designation">Product Manager</h5>
+
+
+                    <div class="emp-income clearfix">
+                        <div class="emp-taxable-income">
+                            <h5>7,50,000</h5>
+                            <h5>Taxable Income</h5>
+                        </div>
+                        <div class="emp-tax-payable-income">
+                            <h5>1,50,000</h5>
+                            <h5>Tax Payable</h5>
+                        </div>
+                    </div>
+                </div>
+                </div><!--
+
+             --><div class="card">
+                <img class="card-img-top" src="assets/images/emp/emp-5.png" alt="Rose Wardon" />
+                <div class="card-text-box">
+                    <a class="edit" href="#"><img src="assets/images/edit.png" /></a>
+                    <h4 class="emp-name">Rose Wardon</h4>
+                    <h5 class="emp-designation">Product Manager</h5>
+
+
+                    <div class="emp-income clearfix">
+                        <div class="emp-taxable-income">
+                            <h5>7,50,000</h5>
+                            <h5>Taxable Income</h5>
+                        </div>
+                        <div class="emp-tax-payable-income">
+                            <h5>1,50,000</h5>
+                            <h5>Tax Payable</h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!-- 
+            
+
+            --><div class="card">
+                <img class="card-img-top" src="assets/images/emp/emp-6.png" alt="Rose Wardon" />
+                <div class="card-text-box">
+                    <a class="edit" href="#"><img src="assets/images/edit.png" /></a>
+                    <h4 class="emp-name">Rose Wardon</h4>
+                    <h5 class="emp-designation">Product Manager</h5>
+
+
+                    <div class="emp-income clearfix">
+                        <div class="emp-taxable-income">
+                            <h5>7,50,000</h5>
+                            <h5>Taxable Income</h5>
+                        </div>
+                        <div class="emp-tax-payable-income">
+                            <h5>1,50,000</h5>
+                            <h5>Tax Payable</h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!--
+            
+            --><div class="card">
+                <img class="card-img-top" src="assets/images/emp/emp-2.png" alt="Rose Wardon" />
+                <div class="card-text-box">
+                    <a class="edit" href="#"><img src="assets/images/edit.png" /></a>
+                    <h4 class="emp-name">Rose Wardon</h4>
+                    <h5 class="emp-designation">Product Manager</h5>
+
+
+                    <div class="emp-income clearfix">
+                        <div class="emp-taxable-income">
+                            <h5>7,50,000</h5>
+                            <h5>Taxable Income</h5>
+                        </div>
+                        <div class="emp-tax-payable-income">
+                            <h5>1,50,000</h5>
+                            <h5>Tax Payable</h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!--
+            
+            --><div class="card">
+                <img class="card-img-top" src="assets/images/emp/emp-3.png" alt="Rose Wardon" />
+                <div class="card-text-box">
+                    <a class="edit" href="#"><img src="assets/images/edit.png" /></a>
+                    <h4 class="emp-name">Rose Wardon</h4>
+                    <h5 class="emp-designation">Product Manager</h5>
+
+
+                    <div class="emp-income clearfix">
+                        <div class="emp-taxable-income">
+                            <h5>7,50,000</h5>
+                            <h5>Taxable Income</h5>
+                        </div>
+                        <div class="emp-tax-payable-income">
+                            <h5>1,50,000</h5>
+                            <h5>Tax Payable</h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!--
+
+            --><div class="card">
+                <img class="card-img-top" src="assets/images/emp/emp-4.png" alt="Rose Wardon" />
+                <div class="card-text-box">
+                    <a class="edit" href="#"><img src="assets/images/edit.png" /></a>
+                    <h4 class="emp-name">Rose Wardon</h4>
+                    <h5 class="emp-designation">Product Manager</h5>
+
+
+                    <div class="emp-income clearfix">
+                        <div class="emp-taxable-income">
+                            <h5>7,50,000</h5>
+                            <h5>Taxable Income</h5>
+                        </div>
+                        <div class="emp-tax-payable-income">
+                            <h5>1,50,000</h5>
+                            <h5>Tax Payable</h5>
+                        </div>
+                    </div>
+                </div>
+                </div><!--
+
+             --><div class="card">
+                <img class="card-img-top" src="assets/images/emp/emp-5.png" alt="Rose Wardon" />
+                <div class="card-text-box">
+                    <a class="edit" href="#"><img src="assets/images/edit.png" /></a>
+                    <h4 class="emp-name">Rose Wardon</h4>
+                    <h5 class="emp-designation">Product Manager</h5>
+
+
+                    <div class="emp-income clearfix">
+                        <div class="emp-taxable-income">
+                            <h5>7,50,000</h5>
+                            <h5>Taxable Income</h5>
+                        </div>
+                        <div class="emp-tax-payable-income">
+                            <h5>1,50,000</h5>
+                            <h5>Tax Payable</h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div> 
+
+        </div>
+
+    </main>
+
+    <script>
+
+        function toggleNav() {
+            document.getElementById("mySidenav").classList.toggle("open");
+        }
+
+    </script>
+</body>
+
+</html>

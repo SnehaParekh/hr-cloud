@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HR Cloud</title>
+    <link rel="stylesheet" href="assets/stylesheets/reset.css">
+    <link rel="stylesheet" href="assets/stylesheets/index.css">
+    <link rel="stylesheet" href="assets/stylesheets/add-emp.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar clearfix">
+            <div class="navbar-left">
+                <a href="#" class="menu"><img src="assets/images/header/menu.png" alt="menu" /></a>
+                <a href="index.html" id="logo">Hr Cloud</a>
+            </div>
+            <div class="navbar-right">
+                <ul class="user-menu">
+                    <li class="user-profile">
+                        <a href="#"><img src="assets/images/header/user.png" alt="current user" /></a>
+                    </li>
+                    <li class="user-notification">
+                        <a href="#"><img src="assets/images/header/notification.png" alt="Notification" /></a>
+                    </li>
+                    <li class="user-messages">
+                        <a href="#"><img src="assets/images/header/message.png" alt="Messages" /></a>
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <h1>No Employees added yet</h1>
+        <a href="#" class="add-emp-btn" onclick="toggleSideNav()">Add Employee</a>
+
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="toggleSideNav()"><img src="assets/images/close.png" /></a>
+                
+                <form class="add-employee-form">
+                    <div class="title">Full Name</div>
+                    <input type="text" name="fullname" class="input-box">
+                    
+                    <div class="title">Email ID</div>
+                    <input type="text" name="emailid" class="input-box">
+                    
+                    <div class="form-text">
+                        <div class="title">Gross Salary</div>
+                        <lable for="gross-salary" class="static-label">p.a</lable>
+                        <input type="text" id="gross-salary" class="input-box"/>
+                    </div>
+
+                    <div class="form-text">
+                        <div class="title">Investment</div>
+                        <lable for="investment" class="static-label">p.a</lable>
+                        <input type="text" id="investment" class="input-box"/>
+                    </div>
+
+                    <div class="form-text">
+                        <div class="title">Taxable Income</div>
+                        <lable for="taxable-income" class="static-label">p.a</lable>
+                        <input type="text" id="taxable-income" class="input-box"/>
+                    </div>
+
+                    <div class="form-text">
+                        <div class="title">Tax Payable</div>
+                        <lable for="tax-payable" class="static-label">p.a</lable>
+                        <input type="text" name="tax-payable" class="input-box"/>
+                    </div>
+
+                    
+                    <br>
+                    <input type="submit" name="submit"  class="form-submit-btn add-emp-btn">
+                </form>
+                
+            </div>
+
+    </main>
+
+    <script>
+    
+        function toggleSideNav() {
+            document.getElementById("mySidenav").classList.toggle("open");
+        }
+
+    </script>
+
+</body>
+
+</html>

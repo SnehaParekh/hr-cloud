@@ -1,0 +1,87 @@
+/*
+  ========================================
+  Add- Employee
+  ========================================
+*/
+
+.sidenav {
+    bottom: 0;
+    width:380px;
+    text-align: left;
+    position: fixed;
+    z-index: 1;
+    top: 70px;
+    right: -380px;
+    background-color: #13182b;
+    box-shadow: 1px 0 13px 0 rgba(0, 0, 0, 0.59);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 30px;
+}
+
+
+
+.open {
+    right: 0;
+}
+
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    height:30px;
+    width:30px;
+}
+
+.add-employee-form {
+    padding: 30px 40px 40px 40px;
+}
+
+.add-employee-form .title {
+    text-transform: uppercase;
+    color:#575c72;
+    margin-bottom: 15px;
+    font-size: 0.813em;
+    text-align: left;
+}
+
+.add-employee-form .input-box {
+    border-radius: 4px;
+    background-color: #222842;
+    height:60px;
+    width: 300px;
+    margin-bottom: 30px;
+    border: none;
+    border-color: transparent;
+    padding: 15px;
+    color:#fff;
+    font-size: 1em;
+    font-family: montserrat;
+}
+
+.add-employee-form .input-box:active,
+.add-employee-form .input-box:focus {
+    border: solid 1px #7082ff;
+}
+
+
+.form-submit-btn {
+    height: 77px;
+    width: 100%;
+    border: transparent;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form-text {
+  position: relative;
+}
+
+.static-label {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  color: #575c72;
+}
